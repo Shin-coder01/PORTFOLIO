@@ -1,0 +1,71 @@
+/* ===== SECTION ===== */
+.experience {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.experience-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #e2e8f0;
+  margin-bottom: 40px;
+}
+
+/* ===== ITEM ===== */
+.experience-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+  padding: 20px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Hover background like original */
+.experience-item:hover {
+  background: rgba(30, 41, 59, 0.5);
+}
+
+/* ===== DATE ===== */
+.experience-date {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+/* ===== CONTENT ===== */
+.experience-content h3 {
+  font-size: 16px;
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.experience-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* ===== TECH TAGS ===== */
+.experience-tech {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.experience-tech span {
+  background: rgba(45, 212, 191, 0.1);
+  color: #38bdf8;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin: 6px 6px 0 0;
+  font-weight: 500;
+}

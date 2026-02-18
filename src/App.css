@@ -1,0 +1,51 @@
+/* ===== GLOBAL ===== */
+
+:root {
+  --x: 50%;
+  --y: 50%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+ background-color: #00122bee;
+  color: #94a3b8;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 100vh;
+  padding: 100px 60px;
+  z-index: 2;
+}
+
+/* ===== RIGHT CONTENT ===== */
+.content {
+  margin-left: 500px; /* sidebar + gap */
+  padding: 100px 80px;
+  position: relative;
+  z-index: 2;
+  color: white;
+  width: calc( 610px);
+}
+
+.spotlight {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: background 0.3s ease;
+}

@@ -1,0 +1,47 @@
+.nav {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav a::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #475569;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: #e2e8f0;
+}
+
+.nav a:hover::before {
+  width: 60px;
+  background: #e2e8f0;
+}
+
+.nav a.active {
+  color: #e2e8f0;
+}
+
+.nav a.active::before {
+  width: 60px;
+  background: #e2e8f0;
+}
