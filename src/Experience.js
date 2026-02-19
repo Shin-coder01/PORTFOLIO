@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import "./Experience.css";
 
 function Experience() {
-  const [active, setActive] = useState(0);
 
   const experiences = [
     {
@@ -30,7 +29,6 @@ function Experience() {
         <motion.div
           key={index}
           className="experience-item"
-          onMouseEnter={() => setActive(index)}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
