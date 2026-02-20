@@ -1,4 +1,4 @@
-/* ===== SECTION ===== */
+
 .experience {
   margin-bottom: 40px;
   width: 100%;
@@ -13,7 +13,7 @@
   margin-bottom: 40px;
 }
 
-/* ===== ITEM ===== */
+
 .experience-item {
   position: relative;
   display: grid;
@@ -27,12 +27,10 @@
   max-width: 100%;
 }
 
-/* Hover background like original */
 .experience-item:hover {
   background: rgba(30, 41, 59, 0.5);
 }
 
-/* ===== DATE ===== */
 .experience-date {
   font-size: 12px;
   font-weight: 600;
@@ -40,7 +38,6 @@
   color: #64748b;
 }
 
-/* ===== CONTENT ===== */
 .experience-content h3 {
   font-size: 16px;
   color: #e2e8f0;
@@ -53,7 +50,6 @@
   color: #94a3b8;
 }
 
-/* ===== TECH TAGS ===== */
 .experience-tech {
   display: flex;
   flex-wrap: wrap;
