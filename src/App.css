@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: Inter, system-ui, sans-serif;
- background-color: #00122bee;
+  background-color: #00122bee;
   color: #94a3b8;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -15,27 +15,51 @@ body {
 .layout {
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .sidebar {
   position: fixed;
   left: 0;
   top: 0;
-  width: 500px;
+  width: 450px;
   height: 100vh;
   padding: 100px 60px;
   z-index: 2;
 }
 
-
 .content {
-  margin-left: 500px; 
+  margin-left: 450px;
   padding: 100px 80px;
-  position: relative;
-  z-index: 2;
-  color: white;
-  width: calc( 610px);
+  max-width: 900px;
+}
+
+@media (max-width: 1024px) {
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 30px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 60px 30px;
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .sidebar {
+    padding: 40px 20px;
+  }
+
+  .content {
+    padding: 40px 20px;
+  }
+
 }
 
 .spotlight {
