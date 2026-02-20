@@ -45,3 +45,19 @@
   width: 60px;
   background: #e2e8f0;
 }
+.socials {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.socials a {
+  color: #64748b;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.socials a:hover {
+  color: #5eead4; 
+  transform: translateY(-3px);
+}

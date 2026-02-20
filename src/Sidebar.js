@@ -1,5 +1,5 @@
 import "./Sidebar.css";
-
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 function Sidebar() {
   return (
     <aside className="sidebar">
@@ -16,11 +16,26 @@ function Sidebar() {
         <a href="#projects">PROJECTS</a>
       </nav>
 
-      <div className="socials">
-        <span>GH</span>
-        <span>IN</span>
-        <span>IG</span>
-      </div>
+     <div className="socials">
+  <a href="https://github.com/Shin-coder01" target="_blank" rel="noopener noreferrer">
+    <FaGithub />
+  </a>
+
+  <a 
+  href="https://www.linkedin.com/in/prathap-engineer/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <FaLinkedin />
+</a>
+
+ <a 
+  href="https://www.instagram.com/iiam_prathap/" 
+  target="_blank" 
+  rel="noopener noreferrer">
+  <FaInstagram />
+</a>
+</div>
     </aside>
   );
 }
